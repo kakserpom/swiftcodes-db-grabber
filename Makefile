@@ -2,7 +2,6 @@
 .PHONY: prepare grab-codes parse-urls grab-data build-json clean
 prepare:
 	composer install
-	apt install -y wget2
 
 all: prepare grab-codes parse-urls grab-data build-json
 grab-codes:
@@ -23,4 +22,4 @@ build-json:
 	php src/parse.php > entries.json
 
 clean:
-    rm -rf banksifsccode.com pages urls.txt
+	rm -rf banksifsccode.com pages urls.txtЛ
