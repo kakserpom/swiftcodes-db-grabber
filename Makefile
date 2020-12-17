@@ -3,6 +3,7 @@
 prepare:
 	composer install
 	apt install -y wget2
+
 all: prepare grab-codes parse-urls grab-data build-json
 grab-codes:
 	wget  --recursive -e robots=off -U mozilla  \
@@ -22,4 +23,4 @@ build-json:
 	php src/parse.php > entries.json
 
 clean:
-    rm -rf banksifsccode.com pages
+    rm -rf banksifsccode.com pages urls.txt
