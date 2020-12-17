@@ -22,4 +22,4 @@ build-json:
 	php src/parse.php > entries.json
 
 clean:
-	rm -rf banksifsccode.com pages urls.txtЛ
+	rm -rf banksifsccode.com pages urls.txt
